@@ -1,0 +1,251 @@
+body {
+  overflow: hidden;
+}
+
+.redWave {
+  top: 20vh;
+  background-color: #ff0000;
+  margin-left: -25vw;
+  height: 20vh;
+}
+
+.move_right {
+  position: absolute;
+  width: 30vw;
+  transition: all 1s ease-in-out;
+}
+
+#axisRedWave:hover .move_right{
+    transform: translate(20vw,0);
+}
+
+.pinkSquare {
+  height: 20vh;
+  top: 40vh;
+  left: 30vw;
+  background-color: #FF00DD;
+  z-index: 2;
+}
+
+.move_down {
+  position: absolute;
+  width: 20vh;
+  transition: all 3s ease-in-out;
+}
+
+#axisPinkSquare:hover .move_down{
+    transform: translate(0,20vh);
+}
+
+.orangeFigure {
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  top: 90vh;
+  left: 20vw;
+  background-color: #FF6100;
+}
+
+.blueFigure {
+  top: 55vh;
+  left: 54vw;
+  animation: rotate 6s infinite ease;
+}
+
+.move_right2 {
+  position: absolute;
+  width: 20vw;
+  transition: all 3s ease-in-out;
+}
+
+#axisBlueFigure:hover .move_right2{
+  transform: translate(20vw,0) rotate(360deg);
+}
+
+.greenFigure {
+  position: absolute;
+  width: 10vw;
+  height: 40vh;
+  background-color: #00FF00;
+  right: 0;
+  animation: scale 3s infinite ease;
+  z-index: 1;
+}
+
+.greenTriangle {
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+  width: 20vw;
+}
+
+.redTriangle {
+  top: 10vh;
+  left: 40vw;
+  z-index: 1;
+}
+
+.move_right3 {
+  position: absolute;
+  width: 20vw;
+  transition: all 3s ease-in-out;
+}
+
+#axisRedTriangle:hover .move_right3{
+  transform: translate(20vw,0);
+}
+
+
+p {
+  position: absolute;
+  font-size: 9vh;
+  font-family: OfficinaSerifBookITC;
+}
+
+a {
+  position: absolute;
+  text-decoration: none;
+  font-size: 9vh;
+  font-family: OfficinaSerifBookITC;
+}
+
+#yellowFalse {
+  color: #ff0000;
+  left: 6vw;
+  top: 20vh;
+}
+
+#white {
+  color: white;
+  top: 30vh;
+  left: 6vw;
+}
+
+#pink {
+  color: #FF00DD;
+  top: 40vh;
+  left: 31vw;
+  z-index: 1;
+}
+
+#orange {
+  color: #FF6100;
+  z-index: 1;
+  top: 89vh;
+  animation: move_right_left 3s infinite ease;
+}
+
+#blue{
+  color: #0000FF;
+  top: 70vh;
+  left: 60vw;
+}
+
+#blueFalse {
+  color: #FF00DD;
+  top: 70vh;
+  left: 80vw;
+  z-index: 1;
+}
+
+#green {
+  color: #00FF00;
+  top: 8vh;
+  animation: move_right_left2 3s infinite ease;
+  transform: rotate(-90deg);
+}
+
+#ahh {
+  color: #FFED00;
+  top: 30vh;
+  right: 2vw;
+  z-index: 2;
+  animation: opacity 3s infinite ease;
+  letter-spacing: 1px;
+
+}
+
+#yellow {
+  color: #FFED00;
+  top: 30vh;
+  right: 2vw;
+  letter-spacing: 1.5px;
+}
+
+#red {
+  color: #ff0000;
+  top: 12vh;
+  left: 50vw;
+}
+
+
+@keyframes move_right_left {
+  0% {
+    left: 12vw;
+  }
+  50% {
+    left: 24vw;
+  }
+  100% {
+    left: 12vw;
+  }
+}
+
+@keyframes move_right_left2 {
+  0% {
+    right: 3vw;
+  }
+  50% {
+    right: 8vw;
+  }
+  100% {
+    right: 3vw;
+  }
+}
+
+@keyframes scale {
+  0% {
+    height: 40vh;
+  }
+  20% {
+    height: 38vh;
+  }
+  40% {
+    height: 40vh;
+  }
+  70% {
+    height: 25vh;
+  }
+  100% {
+    height: 40vh;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.pinkSprinklers {
+  width: 21vw;
+  height: 17vh;
+  position: fixed;
+  top: 34vh;
+  left: 25vw;
+  display: none;
+}
+
+.pinkAnimation:hover .pinkSprinklers {
+  display: block;
+}
