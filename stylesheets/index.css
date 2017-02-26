@@ -49,7 +49,6 @@ body {
 .blueFigure {
   top: 55vh;
   left: 54vw;
-  animation: rotate 6s infinite ease;
 }
 
 .move_right2 {
@@ -72,27 +71,47 @@ body {
   z-index: 1;
 }
 
-.greenTriangle {
+.redTriangleUp {
   position: absolute;
   top: 10vh;
   left: 40vw;
   width: 20vw;
 }
 
-.redTriangle {
+.redTriangleDown {
   top: 10vh;
   left: 40vw;
   z-index: 1;
+  width: 20vw;
 }
 
 .move_right3 {
   position: absolute;
-  width: 20vw;
   transition: all 3s ease-in-out;
 }
 
-#axisRedTriangle:hover .move_right3{
-  transform: translate(20vw,0);
+#axisRedTriangleDown:hover .move_right3{
+  transform: translate(15vw,0);
+}
+
+.greenSquare {
+  position: absolute;
+  background-color: #00FF00;
+  width: 5vw;
+  height: 5vw;
+  animation: rotateX 5s infinite ease;
+  top: 65vh;
+  left: 10vw;
+}
+
+.pinkEllipse {
+  width: 20vw;
+  height: 10vw;
+  top: 30vh;
+  left: 65vw;
+  position: absolute;
+  background-color: #FF00DD;
+  border-radius: 50%;
 }
 
 
@@ -157,19 +176,23 @@ a {
 
 #ahh {
   color: #FFED00;
-  top: 30vh;
-  right: 2vw;
+  top: 35vh;
+  left: 73vw;
   z-index: 2;
   animation: opacity 3s infinite ease;
-  letter-spacing: 1px;
-
 }
 
-#yellow {
+#llow {
   color: #FFED00;
-  top: 30vh;
-  right: 2vw;
-  letter-spacing: 1.5px;
+  top: 35vh;
+  left: 73vw;
+  animation: opacityOpposite 3s infinite ease;
+}
+
+#ye {
+  color: #FFED00;
+  top: 35vh;
+  left: 69vw;
 }
 
 #red {
@@ -225,27 +248,85 @@ a {
   0% {
     opacity: 1;
   }
-  35% {
-    opacity: 1;
-  }
-  75% {
+  50% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
+}
 
+@keyframes opacityOpposite {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotateX {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }
 
 .pinkSprinklers {
-  width: 21vw;
-  height: 17vh;
+  width: 16vw;
   position: fixed;
-  top: 34vh;
-  left: 25vw;
+  top: 35vh;
+  left: 27vw;
   display: none;
 }
 
 .pinkAnimation:hover .pinkSprinklers {
   display: block;
 }
+
+/*.rainbowOpener1 {
+  z-index: 3;
+  width: 100vw;
+  top: 0;
+  perspective: 150px;
+  position: absolute;
+}
+
+.rainbowOpener2 {
+  padding: 50px;
+  height: 50vh;
+  background-color: blue;
+  transform: rotateX(45deg);
+}
+
+.rainbowCloser1 {
+  z-index: 3;
+  width: 100vw;
+  top: 40vh;
+  perspective: 150px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.rainbowCloser2 {
+  height: 50vh;
+  background-color: red;
+  transform: rotateX(45deg);
+}*/
