@@ -8,11 +8,21 @@
 
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="javascripts/jquery-3.1.1.js"></script>
+    <script>
+      $(function() {
+        $(.'opener2').click(function() {
+          if ($('opener2').hasClass('visual')) {
+            $('opener2').addClass('hidden')
+          }
+        });
+      });
+
+    </script>
+
 
   </head>
   <body>
 
-  
 
 
     <div id="axisRedWave">
@@ -20,7 +30,7 @@
     </div>
 
     <p id="yellowFalse">yellow</p>
-    <a id="white" href="index2.html">white</a>
+    <a id="white" href="">white</a>
 
     <div id="axisPinkSquare">
       <div class="pinkSquareUp move_up"></div>
@@ -28,14 +38,14 @@
     </div>
 
     <section class="pinkAnimation">
-        <a id="pink" href="index2.html">pink</a>
+        <a id="pink" href="">pink</a>
       <div class="pinkSprinklers"><img src="images/pink_sprinklers.svg" alt=""></div>
     </section>
 
     <div class="orangeFigure"></div>
-    <a id="orange" href="index2.html">orange</a>
+    <a id="orange" href="">orange</a>
 
-    <a id="blue" href="index2.html">blue</a>
+    <a id="blue" href="">blue</a>
     <p id="blueFalse">blue</p>
 
     <div id="axisBlueFigure">
@@ -46,18 +56,18 @@
 
     <div class="pinkEllipse"></div>
 
-    <a id="ahh" href="index2.html">ahh</a>
-    <a id="llow" href="index2.html">llow</a>
-    <a id="ye" href="index2.html">ye</a>
+    <a id="ahh" href="">ahh</a>
+    <a id="llow" href="">llow</a>
+    <a id="ye" href="">ye</a>
 
-    <a id="green" href="index2.html">green</a>
+    <a id="green" href="">green</a>
 
     <div class="redTriangleUp"><img src="images/red_triangle_up.svg" alt=""></div>
     <div id="axisRedTriangleDown">
       <div class="redTriangleDown move_right3"><img src="images/red_triangle_down.svg" alt=""></div>
     </div>
 
-    <a id="red" href="index2.html">red</a>
+    <a id="red" href="">red</a>
 
     <div class="greenSquare">
       <p id="greenFalse">green</p>
@@ -66,9 +76,15 @@
     <div class="menubar"></div>
     <p class="marquee"><span>get the colors right</span></p>
 
-    <img class="results" src="images/results0.svg" alt="">
+    <img class="results" src="images/results2.svg" alt="">
 
     <p id="redFalse">red</p>
+
+    <!-- <section class="opener2">
+      <div class="visual"></div>
+    </section> -->
+
+
 
 
 
