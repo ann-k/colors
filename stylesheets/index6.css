@@ -1,0 +1,80 @@
+.opener6 {
+  background: linear-gradient(to bottom, #f8fc00 0%,#ff7f00 100%);
+  animation: scaleGradient6 4s ease;
+}
+
+@keyframes scaleGradient6 {
+  0% {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  15% {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  90% {
+    width: 3vw;
+    height: 4vw;
+    left: 51vw;
+    top: 93vh;
+  }
+  100% {
+    width: 3vw;
+    height: 4vw;
+    left: 51vw;
+    top: 93vh;
+  }
+}
+
+#opener2Text {
+  color: red;
+  left: 39vw;
+}
+
+#opener3Text {
+  color: red;
+  left: 42.2vw;
+}
+
+#opener4Text {
+  color: red;
+  left: 45.7vw;
+}
+
+#opener5Text {
+  color: red;
+  left: 49vw;
+}
+
+#opener6Text {
+  color: red;
+  animation: scaleText6 3s ease;
+  left: 52.5vw;
+}
+
+@keyframes scaleText6 {
+  0% {
+    top: -5vh;
+    left: 38vw;
+    font-size: 90vh;
+  }
+  15% {
+    top: -5vh;
+    left: 38vw;
+    font-size: 90vh;
+  }
+  90% {
+    left: 52.5vw;
+    top: 95vh;
+    font-size: 3vh;
+  }
+  100% {
+    left: 52.5vw;
+    top: 95vh;
+    font-size: 3vh;
+  }
+}

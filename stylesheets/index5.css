@@ -1,0 +1,75 @@
+.opener5 {
+  background: linear-gradient(to bottom, #19ff00 0%,#f8fc00 100%);
+  animation: scaleGradient5 4s ease;
+}
+
+@keyframes scaleGradient5 {
+  0% {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  15% {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  90% {
+    width: 3vw;
+    height: 4vw;
+    left: 48vw;
+    top: 93vh;
+  }
+  100% {
+    width: 3vw;
+    height: 4vw;
+    left: 48vw;
+    top: 93vh;
+  }
+}
+
+#opener2Text {
+  color: red;
+  left: 39vw;
+}
+
+#opener3Text {
+  color: red;
+  left: 42.2vw;
+}
+
+#opener4Text {
+  color: red;
+  left: 45.7vw;
+}
+
+#opener5Text {
+  color: red;
+  animation: scaleText5 3s ease;
+  left: 49vw;
+}
+
+@keyframes scaleText5 {
+  0% {
+    top: -5vh;
+    left: 35vw;
+    font-size: 90vh;
+  }
+  15% {
+    top: -5vh;
+    left: 35vw;
+    font-size: 90vh;
+  }
+  90% {
+    left: 49vw;
+    top: 95vh;
+    font-size: 3vh;
+  }
+  100% {
+    left: 49vw;
+    top: 95vh;
+    font-size: 3vh;
+  }
+}
