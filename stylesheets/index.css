@@ -230,10 +230,10 @@ a {
   }
 }*/
 
-#ahh {
+#yeahh {
   color: #FFED00;
   top: 35vh;
-  left: 49vw;
+  left: 44vw;
   z-index: 2;
   animation: opacity 3s infinite ease;
 }
@@ -250,10 +250,10 @@ a {
   }
 }
 
-#llow {
+#yellow {
   color: #FFED00;
   top: 35vh;
-  left: 49vw;
+  left: 44vw;
   animation: opacityOpposite 3s infinite ease;
 }
 
@@ -278,7 +278,7 @@ a {
 #red {
   color: #ff0000;
   top: 82vh;
-  left: 15vw;
+  left: 15.7vw;
 }
 
 #greenFalse {
@@ -327,8 +327,6 @@ a {
 
 
 
-
-
 .menubar {
   top: 0;
   position: fixed;
@@ -351,8 +349,6 @@ a {
 }
 
 .marquee span {
-  /*-webkit-background-clip: text;
-  color: transparent;*/
   line-height: 7vh;
   color: white;
   font-size: 7vh;
@@ -404,4 +400,43 @@ a {
   top: 95vh;
   font-size: 3vh;
   z-index: 7;
+}
+
+.beginner {
+  background-image: url(../images/gradient_closer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 7;
+  animation: moveBeginner 3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  /*align-items: center;*/
+  top: -100vh;
+}
+
+@keyframes moveBeginner {
+  0% {
+    top: 0;
+  }
+  70% {
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+
+#rules {
+  left: 14vw;
+  top: 30vh;
+  color: white;
+  font-size: 10vh;
+  margin-top: 5vh;
+  text-align: center;
 }

@@ -1,5 +1,5 @@
 .opener6 {
-  background: linear-gradient(to bottom, #f8fc00 0%,#ff7f00 100%);
+  background: linear-gradient(to bottom, #00ff2e 0%,#f2ff00 100%);
   animation: scaleGradient6 4s ease;
 }
 
@@ -31,12 +31,12 @@
 }
 
 #opener2Text {
-  color: red;
+  color: #00FF00;
   left: 39vw;
 }
 
 #opener3Text {
-  color: red;
+  color: #FFED00;
   left: 42.2vw;
 }
 
@@ -46,7 +46,7 @@
 }
 
 #opener5Text {
-  color: red;
+  color: #FF6100;
   left: 49vw;
 }
 

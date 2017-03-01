@@ -1,5 +1,5 @@
 .opener3 {
-  background: linear-gradient(to bottom, #0008ff 0%,#00f6ff 100%);
+  background: linear-gradient(to bottom, #c100f2 0%,#0004ff 100%);
   animation: scaleGradient3 4s ease;
 }
 
@@ -31,12 +31,12 @@
 }
 
 #opener2Text {
-  color: red;
+  color: #00FF00;
   left: 39vw;
 }
 
 #opener3Text {
-  color: red;
+  color: #FFED00;
   animation: scaleText3 3s ease;
   left: 42.2vw;
 }
