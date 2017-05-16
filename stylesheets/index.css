@@ -16,7 +16,7 @@ body {
 }
 
 #axisRedWave:hover .move_right{
-    transform: translate(20vw,0);
+  transform: translate(20vw,0);
 }
 
 .pinkSquareUp {
@@ -146,14 +146,14 @@ body {
 
 p {
   position: absolute;
-  font-size: 9vh;
+  font-size: 4.5vw;
   font-family: 'Slabo 27px', serif;
 }
 
 a {
   position: absolute;
   text-decoration: none;
-  font-size: 9vh;
+  font-size: 4.5vw;
   font-family: 'Slabo 27px', serif;
 }
 
@@ -331,7 +331,7 @@ a {
   top: 0;
   position: fixed;
   width: 100vw;
-  height: 7vh;
+  height: 8.5vh;
   z-index: 1;
   background-image: url(../images/gradient.svg);
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ a {
   width: 100%;
   white-space: nowrap;
   z-index: 1;
-  top: -2vh;
+  top: 0vh;
 }
 
 .marquee span {
@@ -384,7 +384,7 @@ a {
 
 .results {
   width: 25vw;
-  margin-top: 92vh;
+  bottom: 0;
   margin-left: 37vw;
   box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.3);
   z-index: 6;
