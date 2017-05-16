@@ -1,32 +1,20 @@
 .opener5 {
   background: linear-gradient(to bottom, #00ffff 0%,#00ff2e 100%);
-  animation: scaleGradient5 4s ease;
+  animation: moveGradient 6s ease;
 }
 
-@keyframes scaleGradient5 {
+@keyframes moveGradient {
   0% {
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
   }
-  15% {
+  70% {
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-  }
-  90% {
-    width: 3vw;
-    height: 4vw;
-    left: 48vw;
-    top: 93vh;
   }
   100% {
-    width: 3vw;
-    height: 4vw;
-    left: 48vw;
-    top: 93vh;
+    top: -100vh;
   }
 }
 
@@ -47,29 +35,53 @@
 
 #opener5Text {
   color: #FF6100;
-  animation: scaleText5 3s ease;
+  animation: moveText 2s ease;
   left: 49vw;
 }
 
-@keyframes scaleText5 {
+@keyframes moveText {
   0% {
     top: -5vh;
-    left: 35vw;
+    left: 47vw;
     font-size: 90vh;
   }
-  15% {
-    top: -5vh;
-    left: 35vw;
-    font-size: 90vh;
-  }
-  90% {
-    left: 49vw;
-    top: 95vh;
-    font-size: 3vh;
+  70% {
+    top: -6vh;
   }
   100% {
-    left: 49vw;
-    top: 95vh;
-    font-size: 3vh;
+    top: -100vh;
+    font-size: 90vh;
   }
+}
+
+.opener2_1 {
+  background: linear-gradient(to bottom, #ff00e1 0%,#c100f2 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 38vw;
+  top: 93vh;
+}
+
+.opener3_1 {
+  background: linear-gradient(to bottom, #c100f2 0%,#0004ff 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 41vw;
+  top: 93vh;
+}
+
+.opener4_1 {
+  background: linear-gradient(to bottom, #0008ff 0%,#00f6ff 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 45vw;
+  top: 93vh;
+}
+
+.opener5_1 {
+  background: linear-gradient(to bottom, #00ffff 0%,#00ff2e 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 48vw;
+  top: 93vh;
 }

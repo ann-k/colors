@@ -1,32 +1,20 @@
 .opener7 {
   background: linear-gradient(to bottom, #fff600 0%,#ff8c00 100%);
-  animation: scaleGradient7 4s ease;
+  animation: moveGradient 6s ease;
 }
 
-@keyframes scaleGradient7 {
+@keyframes moveGradient {
   0% {
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
   }
-  15% {
+  70% {
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-  }
-  90% {
-    width: 3vw;
-    height: 4vw;
-    left: 55vw;
-    top: 93vh;
   }
   100% {
-    width: 3vw;
-    height: 4vw;
-    left: 55vw;
-    top: 93vh;
+    top: -100vh;
   }
 }
 
@@ -57,29 +45,70 @@
 
 #opener7Text {
   color: #0000FF;
-  animation: scaleText7 3s ease;
+  animation: moveText 2s ease;
   left: 55.7vw;
 }
 
-@keyframes scaleText7 {
+@keyframes moveText {
   0% {
-    top: -5vh;
-    left: 38vw;
+    top: -1vh;
+    left: 40vw;
     font-size: 90vh;
   }
-  15% {
-    top: -5vh;
-    left: 38vw;
-    font-size: 90vh;
-  }
-  90% {
-    left: 55.7vw;
-    top: 95vh;
-    font-size: 3vh;
+  70% {
+    top: -3vh;
   }
   100% {
-    left: 55.7vw;
-    top: 95vh;
-    font-size: 3vh;
+    top: -100vh;
+    font-size: 90vh;
+    left: 41vw;
   }
+}
+
+.opener2_1 {
+  background: linear-gradient(to bottom, #ff00e1 0%,#c100f2 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 38vw;
+  top: 93vh;
+}
+
+.opener3_1 {
+  background: linear-gradient(to bottom, #c100f2 0%,#0004ff 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 41vw;
+  top: 93vh;
+}
+
+.opener4_1 {
+  background: linear-gradient(to bottom, #0008ff 0%,#00f6ff 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 45vw;
+  top: 93vh;
+}
+
+.opener5_1 {
+  background: linear-gradient(to bottom, #00ffff 0%,#00ff2e 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 48vw;
+  top: 93vh;
+}
+
+.opener6_1 {
+  background: linear-gradient(to bottom, #00ff2e 0%,#f2ff00 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 51vw;
+  top: 93vh;
+}
+
+.opener7_1 {
+  background: linear-gradient(to bottom, #fff600 0%,#ff8c00 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 55vw;
+  top: 93vh;
 }

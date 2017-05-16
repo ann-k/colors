@@ -416,7 +416,6 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
-  /*align-items: center;*/
   top: -100vh;
 }
 

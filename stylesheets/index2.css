@@ -1,60 +1,48 @@
 .opener2 {
   background: linear-gradient(to bottom, #ff00e1 0%,#c100f2 100%);
-  animation: scaleGradient2 4s ease;
+  animation: moveGradient 6s ease;
 }
 
-@keyframes scaleGradient2 {
+@keyframes moveGradient {
   0% {
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
   }
-  15% {
+  70% {
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-  }
-  90% {
-    width: 3vw;
-    height: 4vw;
-    left: 38vw;
-    top: 93vh;
   }
   100% {
-    width: 3vw;
-    height: 4vw;
-    left: 38vw;
-    top: 93vh;
+    top: -100vh;
   }
 }
 
 #opener2Text {
   color: #00FF00;
-  animation: scaleText2 3s ease;
+  animation: moveText 2s ease;
   left: 39vw;
 }
 
-@keyframes scaleText2 {
+@keyframes moveText {
   0% {
     top: 2vh;
     left: 40vw;
     font-size: 90vh;
   }
-  15% {
-    top: 2vh;
-    left: 40vw;
-    font-size: 90vh;
-  }
-  90% {
-    left: 39vw;
-    top: 95vh;
-    font-size: 3vh;
+  70% {
+    top: 0;
   }
   100% {
-    left: 39vw;
-    top: 95vh;
-    font-size: 3vh;
+    top: -100vh;
+    font-size: 90vh;
   }
+}
+
+.opener2_1 {
+  background: linear-gradient(to bottom, #ff00e1 0%,#c100f2 100%);
+  width: 3vw;
+  height: 4vw;
+  left: 38vw;
+  top: 93vh;
 }
